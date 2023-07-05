@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: 1 1 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_block {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 500px;
+    text-align: center;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.right {
+    padding: 0 20px;
+    width: 300px;
+    height: 200px;
+    background-color: #222;
+}
+
+.right h3, .right p {
+    color: rgb(230, 205, 135);
+}
+
+.text {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.text h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    color: #262322;
+}
+
+.text p {
+    font-size: 1.8em;
+    color: rgb(18, 20, 24);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: -10px;
+}
+
+.text img {
+    width: 200px;
+}
+
+.btn {
+    padding: 60px 0;
+}
+
+.btn a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid #333;
+    color: #333;
+    font-size: 30px;
+    padding: 10px 40px;
+    transition: 0.3s;
+}
+
+.btn a:hover {
+    border: 2px solid #fa4d09;
+    color: #fa4d09;
+}
+
+.menu {
+    padding: 40px 0;
+    width: 670px;
+}
+
+.menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #303530;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.2s;
+}
+
+.menu a:hover:nth-child(1) {
+    color: rgb(168, 24, 204);
+}
+.menu a:hover:nth-child(2) {
+    color: green;
+}
+.menu a:hover:nth-child(3) {
+    color: rgb(44, 81, 204);
+}
+
+@media screen and (max-width: 820px) {
+    .info_block {
+        flex-direction: column;
+        width: 100%;
+    }
+    .left {
+        border: none;
+        width: 100%;
+    }
+    .right {
+        max-width: 240px;
+    }
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+    .menu a {
+        font-size: 16px;
+    }
+    .btn a {
+        font-size: 20px;
+        padding: 6px 20px;
+        border: 1px solid #333;
+    }
+    .btn a:hover {
+        border: 1px solid #fa4d09;
+        color: #fa4d09;
+    }
+    .text h1 {
+        font-size: 1.7em;
+    }
+    
+    .text p {
+        font-size: 1.1em;
+    }
+    
+    .text img {
+        width: 140px;
+    }
+}
